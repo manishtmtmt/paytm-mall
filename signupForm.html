@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Signup Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        
+        <style>
+            body {
+              background-image: url("https://4cornerscreative.com/wp-content/uploads/2016/09/Black-Background-Images-14.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              max-height: 100vh;
+              min-height: 97vh;
+            }
+            .container {
+              margin: 3rem 3rem;
+            }
+            .extra-login::before {
+                z-index: 1;
+                position: absolute;
+                left:0;
+                top:10px;
+                width:100%;
+                height:1px;
+                background: #23396726;
+                content: "";
+            }
+            .animate{
+                background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 2s linear infinite;
+                display: inline-block;
+                font-size: 55px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .max-with-18{
+                max-width: 18rem;
+            }
+        </style>
+    </head>
+    <body class="bg-blue-500 overflow-hidden">
+        <div class="container 2xl:mx-56 2xl:my-32 xl:mx-20 xl:my-16 lg:mx-10">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="">
+                        <div class="bg-white">
+                            <div class="py-2 w-full max-with-18 sm:max-w-sm xs:max-w-sm md:max-w-xs 2xl:max-w-md m-auto">
+                                <div class="text-center pt-10 mb-5">
+                               <div class="flex justify-center w-full"> <img class="text-center" src="https://static.india.com/wp-content/uploads/2019/07/Paytm-Mall-IANS.jpg" style="width: auto;height: 90px;"></div>
+                                <p class="text-xl font-bold text-blue-500">Create Your Account</p>
+                              </div>
+                                <form >
+                                      <div class="mb-5">
+                                        <label class="block text-gray-700 text-md font-light mb-2 " for="text">Full Name</label>
+                                        
+                                        <input type="text" class="shadow appreance-none border rounded w-full p-3 text-sm" id="full_name">
+                                      </div>  
+
+                                      <div class="mb-5">
+                                          <label class="block text-gray-700 text-md font-light mb-2" for="email">Email address</label>
+                                          
+                                          <input type="email" class="shadow appreance-none border rounded w-full p-3 text-sm" id="email">
+                                      </div> 
+
+                                      <div class="mb-5">
+                                        <label class="block text-gray-700 text-md font-light mb-2" for="password">Password</label>
+                                        
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="pass">
+                                      </div>
+
+                                      <div class="mb-5">
+                                        <label class="block text-gray-700 text-md font-light mb-2" for="password">Confirm Password</label>
+                                        
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="co_pass">
+                                    </div>  
+
+                                      <div class="grid grid-cols-1">
+                                          <div>    
+                                              <input type="checkbox" id="rememberme" >
+                                              <label for="rememberme">I accept to the terms and conditions</label>
+                                          </div>
+                                          
+                                      </div>
+                                      <div class="my-7">
+                                          <input type="submit" value="SignUp" class="w-full py-3 text-white bg-blue-500 text-xl font-bold cursor-pointer rounded-md">
+                                      </div>
+
+                                </form>
+                                <div class="text-center my-5">
+                                    <a class="text-xl" href="loginForm.html">Already have an account? Login here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-span-12 lg:col-span-8">
+                   <div class="flex flex-col h-full justify-center text-white text-right ml-20">
+                      <h1 class="animate text-6xl mb-5 leading-relaxed">Welcome to Paytm Mall</h1>
+                       <p class="self-end w-3/4">Paytm Mall strives hard to make your online shopping a more pleasant and cost-effective experience by providing the top quality products at the best price rates in India. Our collection of products consist of electronic appliances, clothes, grocery, home and kitchen products, backpacks, automobiles, books and stationery, to name a few.</p>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+
+document.querySelector("form").addEventListener("submit", signUpFunc);
+    var userData = JSON.parse(localStorage.getItem("userCreds")) || [];
+    function signUpFunc(){
+        event.preventDefault();
+        var userObj = {
+            fname: document.querySelector("#full_name").value,
+            email: document.querySelector("#email").value,
+            password: document.querySelector("#pass").value,
+            confirmPass: document.querySelector("#co_pass").value,
+        }
+        if(userObj.password == userObj.confirmPass){
+            userData.push(userObj);
+            localStorage.setItem("userCreds", JSON.stringify(userData));
+        }else{
+            alert("Password and Confirm Password should be same");
+        } 
+       
+    }
+       
+    </script>
+</html>

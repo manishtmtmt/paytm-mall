@@ -1,0 +1,149 @@
+<html>
+    <head>
+        <title>Login Page</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <style>
+            body {
+              background-image: url("https://4cornerscreative.com/wp-content/uploads/2016/09/Black-Background-Images-14.jpg");
+              background-repeat: no-repeat;
+              background-size: cover;
+              max-height: 100vh;
+              min-height: 97vh;
+            }
+            .container {
+              margin: 2rem 2rem;
+            }
+            .extra-login::before {
+                z-index: 1;
+                position: absolute;
+                left:0;
+                top:10px;
+                width:100%;
+                height:1px;
+                background: #23396726;
+                content: "";
+            }
+            .extra-login {
+                position:relative;
+                /* float:left; */
+                width: 100%;
+                margin: 25px 0;
+                text-align: center;
+            }
+            .animate{
+                background-image: linear-gradient(-225deg, #231557 0%, #44107a 29%, #ff1361 67%, #fff800 100%);
+                background-size: auto auto;
+                background-clip: border-box;
+                background-size: 200% auto;
+                color: #fff;
+                background-clip: text;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                animation: textclip 2s linear infinite;
+                display: inline-block;
+                font-size: 55px;
+                font-weight: 700;
+                margin-bottom: 20px;
+            }
+            .max-with-18{
+                max-width: 18rem;
+            }
+        </style>
+    </head>
+    <body class="bg-blue-500 overflow-hidden">
+        <div class="container 2xl:mx-56 2xl:my-32 xl:mx-20 xl:my-16 lg:mx-10">
+            <div class="grid grid-cols-12 gap-4">
+                <div class="col-span-12 lg:col-span-4">
+                    <div class="">
+                        <div class="bg-white">
+                            <div class="py-2 w-full max-with-18 sm:max-w-sm xs:max-w-sm md:max-w-xs 2xl:max-w-md m-auto">
+                                <div class="text-center pt-10 mb-5">
+                                <h1 class="text-2xl font-bold mb-3">Paytm Mall</h1>
+                                <p class="text-xl font-bold text-blue-500">Sign Into Your Account</p>
+                              </div>
+                                <form >
+                                      <div class="mb-5">
+                                          <label class="block text-gray-700 text-md font-light mb-2" for="email">Email address</label>
+                                          <input type="text" class="shadow appreance-none border rounded w-full p-3  text-sm" id="email">
+                                      </div>  
+                                      <div class="mb-5">
+                                        <label class="block text-gray-700 text-md font-light mb-2" for="password">Password</label>
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3  text-sm" id="password">
+                                      </div>
+                                      <div class="grid grid-cols-2">
+                                          <div>    
+                                              <input type="checkbox" id="rememberme" >
+                                              <label for="rememberme">Remember me</label>
+                                          </div>
+                                          <div class="text-right">
+                                              <a href="#">Forgot your password?</a>
+                                          </div>
+                                      </div>
+                                      <div class="my-7">
+                                          <input type="submit" value="Login" class="w-full py-3 text-white bg-blue-500 text-xl font-bold cursor-pointer rounded-md">
+                                      </div>
+                                </form>
+                                    <div class="extra-login">
+                                        <span class="bg-white-100 text-xl px-3 py-3">Or Login With</span>
+                                    </div>
+                                    <div class="grid grid-cols-3 gap-2">
+                                    <div>
+                                        <button class="w-full py-2 text-white bg-blue-700 text-xl font-bold">
+                                            Facebook
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="w-full py-2 text-white bg-blue-300 text-xl font-bold">
+                                            Twitter
+                                        </button>
+                                    </div>
+                                    <div>
+                                        <button class="w-full py-2 text-white bg-red-500 text-xl font-bold">
+                                            Google
+                                        </button>
+                                    </div>
+
+                                </div>
+                                <div class="text-center my-10">
+                                    <a class="text-xl" href="signupForm.html">Dont have an account? Register here</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="col-span-12 lg:col-span-8">
+                   <div class="flex flex-col h-full justify-center text-white text-right ml-20">
+                      <h1 class="animate text-6xl mb-5 leading-relaxed">Welcome to Paytm Mall</h1>
+                       <p class="self-end w-3/4">Paytm Mall strives hard to make your online shopping a more pleasant and cost-effective experience by providing the top quality products at the best price rates in India. Our collection of products consist of electronic appliances, clothes, grocery, home and kitchen products, backpacks, automobiles, books and stationery, to name a few.</p>
+                   </div> 
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        document.querySelector("form").addEventListener("submit",loginFunc);
+        var regdUsers = JSON.parse(localStorage.getItem("userCreds"));
+
+        function loginFunc(){
+            let flag = false;
+            event.preventDefault();
+            var enteredEmail = document.querySelector("#email").value;
+            var enteredPassword = document.querySelector("#password").value;
+
+            for(var i=0;i<regdUsers.length;i++){
+                if(regdUsers[i].email == enteredEmail && regdUsers[i].password == enteredPassword){
+                    flag=true
+                    break;
+                } 
+            }
+            if(flag){
+                window.location.href="index.html"
+            }else{
+                alert("Login Failed");
+            }
+            
+        }
+    </script>
+</html>

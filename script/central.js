@@ -191,7 +191,7 @@ function displayData(giftCards) {
 function addToCart(elem) {
     cartData.push(elem);
     localStorage.setItem("cart", JSON.stringify(cartData));
-    window.location.href = "cart";
-    alert("added"); 
+    window.location.href = "cart.html";
+    alert("Item added to cart"); 
   }
     

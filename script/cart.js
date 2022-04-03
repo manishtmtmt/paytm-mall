@@ -66,7 +66,7 @@ cashback.innerText =elem.cashback;
 div3.append(discount, price,  cashback);
 
 var btn=document.createElement("button");
-btn.innerText="remove";
+btn.innerText="Remove";
 btn.style.width="100px";
 btn.style.height="30px";
 btn.style.borderRadius="5px";

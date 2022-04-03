@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+           display: flex;
+           align-items: center;
+           justify-content: center;
+           margin: 40px;
+        }
+        input{
+            height: 20px;
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+        <input id="otp" type="number" placeholder="Enter OTP"/>
+        <input type="submit" style="height: 25px;" />
+    </div>
+    </form>
+</body>
+</html>
+<script>
+    document.querySelector("form").addEventListener("submit",funvalidate);
+
+    function funvalidate(){
+        event.preventDefault();
+        var enterotp = document.querySelector("#otp").value;
+    // var count=0;
+    //     for(var i=0; i<regdusers.length; i++){
+            // console.log(regdusers[i]);
+            if(enterotp == "1234"){
+                alert("Payment Successful");
+                
+            }else{
+                alert("Payment Failed!");
+            }
+
+    }
+</script>

@@ -357,3 +357,28 @@ jewellery.map(function(el){
     div2.append(names);
     cards.append(div1,div2)
 });
+
+jewellery.map(function(el){
+    var cards = document.createElement("div")
+    cards.setAttribute("class","card2");
+    cards.setAttribute("title",el.tooltip);
+    document.querySelector("#c5s2").append(cards);
+
+    cards.addEventListener("click", myFun);
+    function myFun() {
+        window.location.href = el.url;
+    };
+
+    var div1 = document.createElement("div")
+    var div2 = document.createElement("div")
+
+    var image = document.createElement("img")
+    image.src = el.img;
+
+    var names = document.createElement("p")
+    names.innerText = el.name;
+
+    div1.append(image);
+    div2.append(names);
+    cards.append(div1,div2)
+});

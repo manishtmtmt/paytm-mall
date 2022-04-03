@@ -1,0 +1,149 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Roboto, Verdana, sans-serif;
+}
+/* navbar start */
+#logo {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar {
+    background-color: white;
+    display: flex;
+    width: 97%;
+    margin: auto;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+#navbar > div:nth-child(2) {
+    justify-content: space-around;
+}
+
+#navbar div {
+    padding: 5px;
+}
+
+.dropdown-btn {
+    background-color: white;
+    font-size: 13px;
+    color: black;
+    font-weight: bold;
+    border: 0px;
+}
+
+.icon {
+    padding-right: 5px;
+    color: red;
+}
+
+.dropdown-btn:hover {
+    background-color: white;
+    color: black;
+}
+
+#dropdown-body {
+    width: 1000px;
+    height: 450px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 450px 450px;
+}
+
+#dropdown-body > div {
+    border: 1px solid #e9e9e9;
+    /*padding: 10px 0px 0px 10px;*/
+    line-height: 15px;
+    
+}
+
+#gift {
+    color: red;
+    border-right: 1px solid red;
+}
+
+#search {
+    border: 0px;
+    width: 80%;
+}
+
+#dropdown-box {
+    border: 1px solid grey;
+    /*padding: 8px 12px;*/
+}
+
+#search-box {
+    border: 1px solid grey;
+    /*padding: 8px 12px;*/
+    width: 60%;
+}
+
+#search:focus {
+    outline: none;
+}
+
+#magnifying {
+    float: right;
+}
+
+#order, #cart, #account {
+    color: black;
+    text-decoration: none;
+}
+/*navbar end*/
+
+/* footer start*/
+#footer {
+    width: 96%;
+    margin: auto;
+}
+
+#footer-para {
+    font-weight: bold;
+}
+
+#row1, #row2, #row3 {
+    display: flex;
+}
+
+#row1>div, #row2>div, #row3>div {
+    width: 20%;
+}
+
+.footer-btn {
+    background-color: white;
+    border: 0px;
+    margin: 10px 0px;
+}
+
+.caret-down {
+    margin-left: 10px;
+}
+
+.close-btn {
+    position: relative;
+    top: 5px;
+    left: 5px;
+    border: 1px solid;
+    padding: 5px;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+}
+
+.links-container {
+    margin-top: 10px;
+    background-color: #f5f8f9;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-rows: auto;
+    gap: 10px;
+}
+
+.links-container a {
+    text-decoration: none;
+    color: black;
+    font-size: 12px;
+}
+
+/* footer end */

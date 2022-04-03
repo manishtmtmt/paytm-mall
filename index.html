@@ -1,12 +1,425 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    Home Page
-</body>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/1d4c272830.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/common.css">
+
+    <title>Paytm Mall - India's Premier Online Shopping Mall</title>
+  </head>
+  <body>
+    <!--Navbar start-->
+    <div id="logo"><a href="index.html"><img src="./images/logo.png" alt="patymmall_logo" id="paytmmall_logo"></a></div>
+
+    <div id="navbar" class="sticky-top">
+        <div id="dropdown-box">
+            <div class="dropdown">
+                <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                 <span class="icon"><i class="fa-solid fa-bars"></i></span> Select By Category
+                </button>
+                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                  <div id="dropdown-body">
+                      <div>
+                          <p id="gift">GIFT CARDS</p>
+                      </div>
+                      <div>
+                          <p>Fashion</p>
+                          <p>Grocery & Home Decor</p>
+                          <p>Jwellery</p>
+                          <p>Furniture & Electronics</p>
+                          <p>Entertainment</p>
+                          <p>Beauty & Health</p>
+                          <p>Travel & Holidays</p>
+                      </div>
+                  </div>
+                </ul>
+            </div>
+        </div>
+        <div id="search-box">
+            <input type="text" id="search" placeholder="Search for a Product, Brand or Category">
+            <span class="icon" id="magnifying"><i class="fa-solid fa-magnifying-glass"></i></span>
+        </div>
+        <div>
+            <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span> <a href="#" id="order">My orders</a>
+        </div>
+        <div>
+            <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span> <a href="#" id="cart">Go to cart</a>
+        </div>
+        <div>
+            <span class="icon"><i class="fa-solid fa-face-laugh"></i></span> <a href="signup.html" id="account">Log in/Sign Up</a>
+        </div>
+    </div>
+    <!-- Navbar End -->
+    <div id="testimonial">
+        <div>
+           <a href="bigbazaar.html"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/940221/1643716500478.jpg?imwidth=1600&impolicy=hq" alt="big-bazaar"></a> 
+        </div>
+        <div>
+            <div class="boxA boxB">
+                <a href="central.html"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/865487/1643716361063.jpg?imwidth=480&impolicy=hq" alt="central"></a>
+            </div>
+            <div class="boxA">
+                <a href="lifestyle.html"><img src="https://assetscdn1.paytm.com/images/catalog/view_item/916685/1643263804492.jpg?imwidth=480&impolicy=hq" alt="lifestyle"></a>
+            </div>
+        </div>
+    </div>
+
+    <div id="carousel-container">
+        <div id="c1">
+            <div id="carouselExampleControlsNoTouching1" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="c1s1"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c1s2"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c1s3"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching1" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div id="c2">
+            <div id="carouselExampleControlsNoTouching2" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="c2s1"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c2s2"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c2s3"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching2" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div id="c3">
+            <div id="carouselExampleControlsNoTouching3" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="c3s1"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c3s2"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c3s3"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching3" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+    </div>
+
+    <div class="carousel4">
+        <div class="heading">
+            <h2>Grocery & Home Furnishing</h2>
+        </div>
+        <div id="c4">
+            <div id="carouselExampleControlsNoTouching4" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="c4s1"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c4s2"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching4" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div>
+            <hr class="red">
+        </div>
+    </div>
+
+    <div class="carousel4">
+        <div class="heading">
+            <h2>Jewellery Brands</h2>
+        </div>
+        <div id="c5">
+            <div id="carouselExampleControlsNoTouching5" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div id="c5s1"></div>
+                  </div>
+                  <div class="carousel-item">
+                    <div id="c5s2"></div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControlsNoTouching5" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControlsNoTouching5" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+        </div>
+        <div>
+            <hr class="red">
+        </div>
+    </div>
+
+    <!-- summary -->
+
+    <div id="summary">
+        <div>
+           <h1 style="font-size: 1.2rem;">Paytm Mall - India’s Leading Online Shopping Experience, Brought to You by Paytm</h1>
+            <p>
+                Online shopping with Paytm Mall is quick, convenient and trouble-free. You can shop for the desired product right from the comfort of your home and get them delivered straight to your doorstep.
+            </p>
+            <p>
+                Browse Paytm Mall and get access to over 65 million products ranging from smartphones, tablets to laptops, sarees, kurtas & kurtis to t-shirts, sneakers, sport shoes to sandals, earrings, watches to fitness bands, chimneys, cookware to gas stoves, dairy products, baby products to makeup kits and many more.
+            </p>
+            <h2 style="font-size: 1.2rem;">What are we offering on Paytmmall.com?</h2>
+            <p>
+                Paytm Mall strives hard to make your online shopping a more pleasant and cost-effective experience by providing the top quality products at the best price rates in India. Our collection of products consist of electronic appliances, clothes, grocery, home and kitchen products, backpacks, automobiles, books and stationery, to name a few.
+            </p>
+            <p>
+                The super value bazaar offers an extensive range of grocery products like daily food staples, ready to cook food, high on nutrition food, beauty, make-up, personal care, health, baby care products and many more. Also take a look at the latest Automobile section that consists of cars, bikes, scooters, sports bikes, accessories, riding gear and automotive care.
+            </p>
+            <p>
+                Shop by categories, check out all the available deals, limited period offers, cashback offers, seasonal sales, and there is so much more to make your online shopping experience enjoyable & gratifying!
+            </p>
+            <h2 style="font-size: 1.2rem;">Benefits of shopping on Paytmmall.com</h2>
+            <p>
+                <strong>User-Friendly:</strong> Leading online shopping experience in India which is simple and faster to load. Shop on the go and get the products delivered in just a few easy clicks.
+            </p>
+            <p>
+                <strong>Safe & Secure Shopping: </strong>You need not worry about your account credentials or personal details.
+            </p>
+            <ul>
+                <li>Each and every transaction at Paytm Mall is securely processed and you can be rest assured that your money is in safe hands.</li>
+            </ul>
+            <p>
+                <strong>Check Out Closely:</strong> View products of your choice in detail with clear images and thorough descriptions before buying.
+            </p>
+            <p>
+                <strong>Multiple Payment Options: </strong>Choose a payment option of your choice i.e. Credit/Debit Cards, Netbanking and UPI.
+            </p>
+            <ul>
+                <li>Use Paytm Wallet for quick checkouts & hassle-free payments</li>
+            </ul>
+            <p>
+                <strong>Paytm Postpaid Services:</strong> Now, you can buy today and pay next month with Paytm-ICICI Bank Postpaid.
+            </p>
+            <p>
+                <strong>Order History: </strong>All your orders show up at one place, you can track them or repeat them with ease.
+            </p>
+            <ul>
+                <li>Trouble-free returns, track request & replacement of your orders</li>
+            </ul>
+            <p>
+                <strong>24x7 Customer Care:</strong> For all your queries and concerns regarding your shopping orders, head over to <a href="http://paytmmall.com/care">paytmall.com/care</a> or call us at 01204606060 anytime
+            </p>
+            <p>
+                The products paired with amazing deals are a topping on the cake that no one would want to miss. Paytm Mall World Store offers access to imported products ranging from beauty and personal care, watches, jewellery and so much more that too at exclusive price rates.
+            </p>
+            <p>
+                Paytm Mall presents benefits like faster delivery with easy returns and payment options. Moreover, you can also take delight in <a href="http://paytmmall.com/">online shopping</a> with cash on delivery (COD) option as & when needed.
+            </p>
+        </div>
+        <div id="s-2">
+            <div>
+                <p><span class="icon2"><i class="fa-regular fa-heart"></i></span></p>
+                <strong>24x7 Help</strong>
+                <p>Need Help? <a href="#">Click Here</a>. You can also talk to us on 0120 4606060 to resolve your query.</p>
+            </div>
+            <div>
+                <p><span class="icon2"><i class="fa-regular fa-square-check"></i></span></p>
+                <strong>Paytm Trust</strong>
+                <p>Your money is yours! All refunds come with no question asked guarantee.</p>
+            </div>
+            <div>
+                <p><span class="icon2"><i class="fa-solid fa-star"></i></span></p>
+                <strong>100% Assurance</strong>
+                <p>At Paytm, we provide 100% assurance. If you have any issue, your money is immediately refunded. Sit back and enjoy your shopping.</p>
+            </div>
+            <div>
+                <p><span class="icon2"><i class="fa-solid fa-bag-shopping"></i></span></p>
+                <strong>100% Assurance</strong>
+                <p>At Paytm, we provide 100% assurance. If you have any issue, your money is immediately refunded. Sit back and enjoy your shopping.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="extra">
+        <p>Cashback would be added as Paytm Cash, which is One97 Communications Ltd loyalty program. It can be used to pay for goods & services sold by merchants that accept ‘Pay with Paytm’</p>
+    </div>
+
+    <div id="links">
+        <div>
+            <div>
+                <a href="about.html">About Us</a>
+                <a href="#">Partner with us</a>
+                <a href="#">Terms & Condition</a>
+                <a href="#">Blog</a>
+                <a href="#">Media</a>
+                <a href="#">24x7 Help</a>
+                <a href="#">Grievance policy</a>
+                <a href="#">Bug bounty</a>
+                <a href="#">Return/Cancellation policy</a>
+            </div>
+            <div id="l-b2">
+                <div>
+                    <span class="icon"><i class="fa-brands fa-apple"></i></span>
+                    <span class="icon"><i class="fa-brands fa-windows"></i></span>
+                    <span class="icon"><i class="fa-brands fa-android"></i></span>
+                </div>
+                <div>
+                    <span class="icon"><i class="fa-brands fa-twitter"></i></span>
+                    <span class="icon"><i class="fa-brands fa-facebook-f"></i></span>
+                    <span class="icon"><i class="fa-brands fa-instagram"></i></span>
+                    <span class="icon"><i class="fa-brands fa-youtube"></i></span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="c">
+        <div>
+            <div>
+                <img src="./images/cards.png" alt="cards">
+            </div>
+            <div>
+                <img class="i2" src="./images/seller.png" alt="seller"><img class="i2" src="./images/wallet.png" alt="wallet">
+            </div>
+        </div>
+    </div>
+
+    <!-- footer start -->
+
+    <div id="footer">
+        <div>
+            <p id="footer-para">From Electronics, Fashion to Cars: Buy Everything Online from the Convenience of Your Home from Paytm Mall</p>
+        </div>
+        <div id="footer-container">
+          <div id="row1">
+              <div><button class="footer-btn" onclick="openTab('electricity')">Electricity <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('mobiles')">Mobiles <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('carAndBike')">Car & Bike <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('superMarket')">Super Market <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('womenFashion')">Women's Fashion <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+          </div>
+          <div id="electricity" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="mobiles" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="carAndBike" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="superMarket" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="womenFashion" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="row2">
+              <div><button class="footer-btn" onclick="openTab('menFashion')">Men's Fashion <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('homeAndKitchen')">Home & Kitchen <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('babyKidsAndToys')">Baby, Kids & Toys <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('carAndBikeAccessories')">Car & Bike Accessories <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('sportsAndFitness')">Sports & Fitness <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+          </div>
+          <div id="menFashion" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="homeAndKitchen" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="babyKidsAndToys" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="carAndBikeAccessories" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="sportsAndFitness" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="row3">
+              <div><button class="footer-btn" onclick="openTab('stationery')">Stationery <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+              <div><button class="footer-btn" onclick="openTab('travelCards')">Travel Cards <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+          </div>
+          <div id="stationery" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+          <div id="travelCards" class="tab-display-container city" style="display:none">
+              <span onclick="this.parentElement.style.display='none'"
+        class="close-btn">&times;</span>
+              <div class="links-container"></div>
+          </div>
+        </div>
+    </div>
+
+    <!--footer end-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="./script/index.js"></script>
+    <script src="./script/footer.js"></script>
+
+  </body>
 </html>

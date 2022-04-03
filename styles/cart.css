@@ -1,0 +1,66 @@
+#box{
+    display: flex;
+    gap: 100px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+#box img{
+    height: 200px;
+    width: 230px;
+}
+#left{
+    width: 59%;
+    margin-left: 20px;
+
+}
+#ltop{
+    font-size: 30px;
+    padding: 10px;
+    
+}
+#rightbox{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    font-size:40px;
+    width: 30%;   
+}
+#top{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+#top :last-child{
+margin-top: 15px;
+}
+#product{
+    display:flex;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color:rgb(220, 217, 217);
+    gap:20px;
+    justify-content: space-around;
+}
+#product div{
+    background-color: white;
+}
+#zt{
+    margin-left: 120px;
+}
+
+.rightbox div{
+     display: flex;
+     justify-content: space-around;
+     margin-bottom: 60px;
+     margin-top: 50px;
+    
+}
+.rightbox{
+    width: 30%;
+}
+#pay{
+    background-color: grey;
+    color: aliceblue;
+    height: 40px;
+    width:300px;
+}

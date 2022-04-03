@@ -64,11 +64,11 @@
                                 <form >
                                       <div class="mb-5">
                                           <label class="block text-gray-700 text-md font-light mb-2" for="email">Email address</label>
-                                          <input type="text" class="shadow appreance-none border rounded w-full p-3  text-sm" id="email">
+                                          <input type="text" class="shadow appreance-none border rounded w-full p-3  text-sm" id="email" required>
                                       </div>  
                                       <div class="mb-5">
                                         <label class="block text-gray-700 text-md font-light mb-2" for="password">Password</label>
-                                        <input type="password" class="shadow appreance-none border rounded w-full p-3  text-sm" id="password">
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3  text-sm" id="password" required>
                                       </div>
                                       <div class="grid grid-cols-2">
                                           <div>    
@@ -141,7 +141,7 @@
             if(flag){
                 window.location.href="index.html"
             }else{
-                alert("Login Failed");
+                alert("Incorrect username or password");
             }
             
         }

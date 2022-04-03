@@ -64,30 +64,30 @@
                                       <div class="mb-5">
                                         <label class="block text-gray-700 text-md font-light mb-2 " for="text">Full Name</label>
                                         
-                                        <input type="text" class="shadow appreance-none border rounded w-full p-3 text-sm" id="full_name">
+                                        <input type="text" class="shadow appreance-none border rounded w-full p-3 text-sm" id="full_name" required>
                                       </div>  
 
                                       <div class="mb-5">
                                           <label class="block text-gray-700 text-md font-light mb-2" for="email">Email address</label>
                                           
-                                          <input type="email" class="shadow appreance-none border rounded w-full p-3 text-sm" id="email">
+                                          <input type="email" class="shadow appreance-none border rounded w-full p-3 text-sm" id="email" required>
                                       </div> 
 
                                       <div class="mb-5">
                                         <label class="block text-gray-700 text-md font-light mb-2" for="password">Password</label>
                                         
-                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="pass">
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="pass" required>
                                       </div>
 
                                       <div class="mb-5">
                                         <label class="block text-gray-700 text-md font-light mb-2" for="password">Confirm Password</label>
                                         
-                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="co_pass">
+                                        <input type="password" class="shadow appreance-none border rounded w-full p-3 text-sm" id="co_pass" required>
                                     </div>  
 
                                       <div class="grid grid-cols-1">
                                           <div>    
-                                              <input type="checkbox" id="rememberme" >
+                                              <input type="checkbox" id="rememberme" required>
                                               <label for="rememberme">I accept to the terms and conditions</label>
                                           </div>
                                           
@@ -128,6 +128,7 @@ document.querySelector("form").addEventListener("submit", signUpFunc);
             confirmPass: document.querySelector("#co_pass").value,
         }
         if(userObj.password == userObj.confirmPass){
+            alert("Signup Successful")
             userData.push(userObj);
             localStorage.setItem("userCreds", JSON.stringify(userData));
         }else{

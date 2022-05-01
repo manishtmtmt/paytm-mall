@@ -7,7 +7,7 @@ console.log("cartData")
 //     return sum+}
 
 var total=CartData.reduce(function(sum,elem,index,arr){
-        return sum+elem.price},0); 
+        return sum+elem.discount},0); 
         document.querySelector("#bb").innerText=total
 
         var length=CartData.length;

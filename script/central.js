@@ -12,7 +12,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 10000,
-            discount: "Buy for ₹"+8700,
+            discount: 8700,
             cashback: "with cashback",
         },
         {
@@ -20,7 +20,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 5000,
-            discount: "Buy for ₹"+4350,
+            discount: 4350,
             cashback: "with cashback",
         },
         {
@@ -28,7 +28,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 4000,
-            discount: "Buy for ₹"+3600,
+            discount: 3600,
             cashback: "with cashback",
         },
         {
@@ -36,7 +36,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 3000,
-            discount: "Buy for ₹"+2700,
+            discount: 2700,
             cashback: "with cashback",
         },
         {
@@ -44,7 +44,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 2500,
-            discount: "Buy for ₹"+2250,
+            discount: 2250,
             cashback: "with cashback",
         },
         {
@@ -52,7 +52,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 2000,
-            discount: "Buy for ₹"+1800,
+            discount: 1800,
             cashback: "with cashback",
         },
         {
@@ -60,7 +60,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 1500,
-            discount: "Buy for ₹"+1300,
+            discount: 1300,
             cashback: "with cashback",
         },
         {
@@ -68,7 +68,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 1000,
-            discount: "Buy for ₹"+900,
+            discount: 900,
             cashback: "with cashback",
         },
         {
@@ -76,7 +76,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK861793A7D2F5F9/0.png?imwidth=282&impolicy=hq",
             name: "Central Gift Card",
             price: 500,
-            discount: "Buy for ₹"+450,
+            discount: 450,
             cashback: "with cashback",
         }
     ]
@@ -156,7 +156,7 @@ function displayData(giftCards) {
 
     var discount = document.createElement("p");
     discount.setAttribute("id", "discountPrice");
-    discount.innerText =elem.discount;
+    discount.innerText ="Buy for ₹"+elem.discount;
 
     var cashback = document.createElement("p");
     cashback.setAttribute("id", "givencashback");

@@ -225,7 +225,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTQWIK8617936D6D4DF4/0.png?imwidth=282&impolicy=hq",
             name: "Jockey Voucher",
             price: 5500,
-            discount: "Buy for ₹"+5200,
+            discount: 5200,
             cashback: "with cashback",
         },
         {
@@ -233,7 +233,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTQWIK8617936D6D4DF4/0.png?imwidth=282&impolicy=hq",
             name: "Jockey Voucher",
             price: 5000,
-            discount: "Buy for ₹"+4350,
+            discount: 4350,
             cashback: "with cashback",
         },
         {
@@ -241,7 +241,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTQWIK8617936D6D4DF4/0.png?imwidth=282&impolicy=hq",
             name: "Jockey Voucher",
             price: 4000,
-            discount: "Buy for ₹"+3000,
+            discount: 3000,
             cashback: "with cashback",
         },
         {
@@ -249,7 +249,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTQWIK8617936D6D4DF4/0.png?imwidth=282&impolicy=hq",
             name: "Jockey Voucher",
             price: 2500,
-            discount: "Buy for ₹"+2100,
+            discount: 2100,
             cashback: "with cashback",
         },
        
@@ -331,7 +331,7 @@ function displayData(giftCards) {
 
     var discount = document.createElement("p");
     discount.setAttribute("id", "discountPrice");
-    discount.innerText =elem.discount;
+    discount.innerText ="Buy for ₹"+elem.discount;
 
     var cashback = document.createElement("p");
     cashback.setAttribute("id", "givencashback");

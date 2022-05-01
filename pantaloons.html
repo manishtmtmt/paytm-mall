@@ -1,412 +1,615 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pantaloons</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/1d4c272830.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="./styles/central.css">
-    <link rel="stylesheet" href="./styles/common.css">
-    
-</head>
-<body>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/1d4c272830.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./styles/central.css" />
+    <link rel="stylesheet" href="./styles/common.css" />
+  </head>
+  <body>
     <!--Navbar start-->
-    <div id="logo"><a href="index.html"><img src="./images/logo.png" alt="patymmall_logo" id="paytmmall_logo"></a></div>
+    <div id="logo">
+      <a href="index.html"
+        ><img src="./images/logo.png" alt="patymmall_logo" id="paytmmall_logo"
+      /></a>
+    </div>
 
     <div id="navbar" class="sticky-top">
-        <div id="dropdown-box">
-            <div class="dropdown">
-                <button class="dropdown-btn" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-                 <span class="icon"><i class="fa-solid fa-bars"></i></span> Select By Category
-                </button>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                  <div id="dropdown-body">
-                      <div>
-                          <p id="gift">GIFT CARDS</p>
-                      </div>
-                      <div>
-                          <p>Fashion</p>
-                          <p>Grocery & Home Decor</p>
-                          <p>Jwellery</p>
-                          <p>Furniture & Electronics</p>
-                          <p>Entertainment</p>
-                          <p>Beauty & Health</p>
-                          <p>Travel & Holidays</p>
-                      </div>
-                  </div>
-                </ul>
+      <div id="dropdown-box">
+        <div class="dropdown">
+          <button
+            class="dropdown-btn"
+            type="button"
+            id="dropdownMenuButton1"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <span class="icon"><i class="fa-solid fa-bars"></i></span> Select By
+            Category
+          </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+            <div id="dropdown-body">
+              <div>
+                <p id="gift">GIFT CARDS</p>
+              </div>
+              <div>
+                <p>Fashion</p>
+                <p>Grocery & Home Decor</p>
+                <p>Jwellery</p>
+                <p>Furniture & Electronics</p>
+                <p>Entertainment</p>
+                <p>Beauty & Health</p>
+                <p>Travel & Holidays</p>
+              </div>
             </div>
+          </ul>
         </div>
-        <div id="search-box">
-            <input type="text" id="search" placeholder="Search for a Product, Brand or Category">
-            <span class="icon" id="magnifying"><i class="fa-solid fa-magnifying-glass"></i></span>
-        </div>
-        <div>
-            <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span> <a href="#" id="order">My orders</a>
-        </div>
-        <div>
-            <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span> <a href="cart.html" id="cart">Go to cart</a>
-        </div>
-        <div>
-            <span class="icon"><i class="fa-solid fa-face-laugh"></i></span> <a href="signupForm.html" id="account">Log in/Sign Up</a>
-        </div>
+      </div>
+      <div id="search-box">
+        <input
+          type="text"
+          id="search"
+          placeholder="Search for a Product, Brand or Category"
+        />
+        <span class="icon" id="magnifying"
+          ><i class="fa-solid fa-magnifying-glass"></i
+        ></span>
+      </div>
+      <div>
+        <span class="icon"><i class="fa-solid fa-clipboard-list"></i></span>
+        <a href="#" id="order">My orders</a>
+      </div>
+      <div>
+        <span class="icon"><i class="fa-solid fa-basket-shopping"></i></span>
+        <a href="cart.html" id="cart">Go to cart</a>
+      </div>
+      <div>
+        <span class="icon"><i class="fa-solid fa-face-laugh"></i></span>
+        <a href="signupForm.html" id="account">Log in/Sign Up</a>
+      </div>
     </div>
     <!-- Navbar End -->
     <div id="container">
-        <div id="leftbox">
-            <div id="topleft">
-                <div>
-                <div class="deals">
-                    <a href="index.html"> < Deals For you</a>
-                    <br>
-                    <a href="lifestyle.html"> < Fashion</a>
-                </div>
-                <div class="apparels">Apparels</div>
-                <hr>
-                </div>
+      <div id="leftbox">
+        <div id="topleft">
+          <div>
+            <div class="deals">
+              <a href="index.html"> < Deals For you</a>
+              <br />
+              <a href="lifestyle.html"> < Fashion</a>
             </div>
-            <div id="bottomleft">
-                <div>
-                    <p class="pricebrand" id="leftprice">Price</p>
-                </div>
-                <div class="sliderbox">
-                    <input type="range" min="0" max="10000" value="0" id="slider">
-                </div>
-                
-                <div></div>
-                <div class="pricing" >
-                    <input placeholder="Min" value="" type="number" id="minvalue" onchange="filterByprice()">
-                    <p class="pricebrand">to</p>
-                    <input placeholder="Max" value="" type="number" id="maxvalue">
-                </div>
-                <hr>
-                <div class="branding">
-                    <p class="pricebrand">Brand</p></div>
-                <div class="checkbrand">
-                    <input type="checkbox">
-                    <label for="filter0">
-                    <span class="check"></span>
-                    <span class="labelname">Pantaloons</span>
-                    <span class="productcount"></span>
-
-                </label>
-                </div>
-
-            </div>
+            <div class="apparels">Apparels</div>
+            <hr />
+          </div>
         </div>
-        <div id="rightbox">
-            <div id="topright">
-                <div id="topbar">
-                    <h1>Pantaloons</h1>
-                    <span class="h1span"></span>
-                </div>
-                <div  id="sortit"><span>Sort By</span>
-                    <select id="selection" onchange="sortByCategory()"> 
-                    <option value="new" id="newest">New</option>
-                    <option value="popular" id="popu">Popular</option>
-                    <option value="lth" id="lth">Low To High Price</option>
-                    <option value="htl" id="htl">High To Low Price</option>
-                </select></div>
-            </div>
-            <hr>
-            <div id="product">
-             
-            </div>
+        <div id="bottomleft">
+          <div>
+            <p class="pricebrand" id="leftprice">Price</p>
+          </div>
+          <div class="sliderbox">
+            <input type="range" min="0" max="10000" value="0" id="slider" />
+          </div>
+
+          <div></div>
+          <div class="pricing">
+            <input
+              placeholder="Min"
+              value=""
+              type="number"
+              id="minvalue"
+              onchange="filterByprice()"
+            />
+            <p class="pricebrand">to</p>
+            <input placeholder="Max" value="" type="number" id="maxvalue" />
+          </div>
+          <hr />
+          <div class="branding">
+            <p class="pricebrand">Brand</p>
+          </div>
+          <div class="checkbrand">
+            <input type="checkbox" />
+            <label for="filter0">
+              <span class="check"></span>
+              <span class="labelname">Pantaloons</span>
+              <span class="productcount"></span>
+            </label>
+          </div>
         </div>
+      </div>
+      <div id="rightbox">
+        <div id="topright">
+          <div id="topbar">
+            <h1>Pantaloons</h1>
+            <span class="h1span"></span>
+          </div>
+          <div id="sortit">
+            <span>Sort By</span>
+            <select id="selection" onchange="sortByCategory()">
+              <option value="new" id="newest">New</option>
+              <option value="popular" id="popu">Popular</option>
+              <option value="lth" id="lth">Low To High Price</option>
+              <option value="htl" id="htl">High To Low Price</option>
+            </select>
+          </div>
+        </div>
+        <hr />
+        <div id="product"></div>
+      </div>
     </div>
     <!-- footer start -->
 
     <div id="footer">
-        <div>
-            <p id="footer-para">From Electronics, Fashion to Cars: Buy Everything Online from the Convenience of Your Home from Paytm Mall</p>
-        </div>
-        <div id="footer-container">
-          <div id="row1">
-              <div><button class="footer-btn" onclick="openTab('electricity')">Electricity <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('mobiles')">Mobiles <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('carAndBike')">Car & Bike <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('superMarket')">Super Market <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('womenFashion')">Women's Fashion <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
+      <div>
+        <p id="footer-para">
+          From Electronics, Fashion to Cars: Buy Everything Online from the
+          Convenience of Your Home from Paytm Mall
+        </p>
+      </div>
+      <div id="footer-container">
+        <div id="row1">
+          <div>
+            <button class="footer-btn" onclick="openTab('electricity')">
+              Electricity
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
           </div>
-          <div id="electricity" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
+          <div>
+            <button class="footer-btn" onclick="openTab('mobiles')">
+              Mobiles
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
           </div>
-          <div id="mobiles" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
+          <div>
+            <button class="footer-btn" onclick="openTab('carAndBike')">
+              Car & Bike
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
           </div>
-          <div id="carAndBike" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
+          <div>
+            <button class="footer-btn" onclick="openTab('superMarket')">
+              Super Market
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
           </div>
-          <div id="superMarket" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="womenFashion" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="row2">
-              <div><button class="footer-btn" onclick="openTab('menFashion')">Men's Fashion <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('homeAndKitchen')">Home & Kitchen <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('babyKidsAndToys')">Baby, Kids & Toys <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('carAndBikeAccessories')">Car & Bike Accessories <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('sportsAndFitness')">Sports & Fitness <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-          </div>
-          <div id="menFashion" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="homeAndKitchen" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="babyKidsAndToys" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="carAndBikeAccessories" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="sportsAndFitness" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="row3">
-              <div><button class="footer-btn" onclick="openTab('stationery')">Stationery <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-              <div><button class="footer-btn" onclick="openTab('travelCards')">Travel Cards <span class="caret-down"><i class="fa-solid fa-caret-down"></i></span></button></div>
-          </div>
-          <div id="stationery" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
-          </div>
-          <div id="travelCards" class="tab-display-container city" style="display:none">
-              <span onclick="this.parentElement.style.display='none'"
-        class="close-btn">&times;</span>
-              <div class="links-container"></div>
+          <div>
+            <button class="footer-btn" onclick="openTab('womenFashion')">
+              Women's Fashion
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
           </div>
         </div>
+        <div
+          id="electricity"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="mobiles"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="carAndBike"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="superMarket"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="womenFashion"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div id="row2">
+          <div>
+            <button class="footer-btn" onclick="openTab('menFashion')">
+              Men's Fashion
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button class="footer-btn" onclick="openTab('homeAndKitchen')">
+              Home & Kitchen
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button class="footer-btn" onclick="openTab('babyKidsAndToys')">
+              Baby, Kids & Toys
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button
+              class="footer-btn"
+              onclick="openTab('carAndBikeAccessories')"
+            >
+              Car & Bike Accessories
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button class="footer-btn" onclick="openTab('sportsAndFitness')">
+              Sports & Fitness
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <div
+          id="menFashion"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="homeAndKitchen"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="babyKidsAndToys"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="carAndBikeAccessories"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="sportsAndFitness"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div id="row3">
+          <div>
+            <button class="footer-btn" onclick="openTab('stationery')">
+              Stationery
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+          <div>
+            <button class="footer-btn" onclick="openTab('travelCards')">
+              Travel Cards
+              <span class="caret-down"
+                ><i class="fa-solid fa-caret-down"></i
+              ></span>
+            </button>
+          </div>
+        </div>
+        <div
+          id="stationery"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+        <div
+          id="travelCards"
+          class="tab-display-container city"
+          style="display: none"
+        >
+          <span
+            onclick="this.parentElement.style.display='none'"
+            class="close-btn"
+            >&times;</span
+          >
+          <div class="links-container"></div>
+        </div>
+      </div>
     </div>
 
     <!--footer end-->
-</body>
+  </body>
 </html>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script
+  src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+  crossorigin="anonymous"
+></script>
 
 <script src="./script/footer.js"></script>
 <script>
-// var rangeslider= document.getElementById("slider");
-    // var output= document.getElementById("minvalue");
-    // output.innerHTML=rangeslider.value;
+  // var rangeslider= document.getElementById("slider");
+  // var output= document.getElementById("minvalue");
+  // output.innerHTML=rangeslider.value;
 
-    // rangeslider.oninput=function(){
-    //     output.innerHTML=this.value;
-    // }
+  // rangeslider.oninput=function(){
+  //     output.innerHTML=this.value;
+  // }
 
-    var giftCards = [
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 10000,
-            discount: 8700,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 5000,
-            discount: 4350,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 4000,
-            discount: 3600,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 3000,
-            discount: 2700,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 2500,
-            discount: 2250,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 2000,
-            discount: 1800,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 1500,
-            discount: 1300,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 1800,
-            discount: 1400,
-            cashback: "with cashback",
-        },
-        {
-            image_url:
-            "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
-            name: "Pantaloons Gift Card",
-            price: 9000,
-            discount: 8500,
-            cashback: "with cashback",
-        },
-       
-    ]
+  var giftCards = [
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 10000,
+      discount: 8700,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 5000,
+      discount: 4350,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 4000,
+      discount: 3600,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 3000,
+      discount: 2700,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 2500,
+      discount: 2250,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 2000,
+      discount: 1800,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 1500,
+      discount: 1300,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 1800,
+      discount: 1400,
+      cashback: "with cashback",
+    },
+    {
+      image_url:
+        "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAVOUCHER-WORTPANT66355366FA5F7F/0.jpg?imwidth=282&impolicy=hq",
+      name: "Pantaloons Gift Card",
+      price: 9000,
+      discount: 8500,
+      cashback: "with cashback",
+    },
+  ];
 
-    var cartData = JSON.parse(localStorage.getItem("cart")) || [];
-    
-    window.addEventListener("load", function () {
-        filterByprice(giftCards);
-    });
-    
-    window.addEventListener("load", function () {
+  var cartData = JSON.parse(localStorage.getItem("cart")) || [];
+
+  window.addEventListener("load", function () {
+    filterByprice(giftCards);
+  });
+
+  window.addEventListener("load", function () {
+    displayData(giftCards);
+  });
+
+  function sortByCategory() {
+    var selected = document.querySelector("#selection").value;
+    console.log(selected);
+
+    if (selected == "popular") {
+      giftCards.sort(function (a, b) {
+        if (a.discount > b.discount) return 1;
+        if (a.discount < b.discount) return -1;
+        return 0;
+      });
+
+      console.log(giftCards);
       displayData(giftCards);
-    });
-    
-function sortByCategory() {
-      var selected = document.querySelector("#selection").value;
-      console.log(selected);
-
-      if (selected == "popular") {
-        giftCards.sort(function (a, b) {
-          if (a.discount > b.discount) return 1;
-          if (a.discount < b.discount) return -1;
-          return 0;
-        });
-
-        console.log(giftCards);
-        displayData(giftCards);
-      }
-
-      if (selected == "new") {
-        giftCards.sort(function (a, b) {
-          if (a.name > b.name) return -1;
-          if (a.name < b.name) return 1;
-          return 0;
-        });
-        console.log(giftCards);
-        displayData(giftCards);
-      }
-    
-      if (selected == "htl") {
-        giftCards.sort(function (a, b) {
-          return b.price - a.price;
-        });
-        displayData(giftCards);
-      
     }
-      if (selected == "lth") {
-        giftCards.sort(function (a, b) {
-          return a.price - b.price;
-        });
-        displayData(giftCards);
-      }
 
-}
-var count=giftCards.length;
-    document.querySelector(".productcount").append(count);
-    document.querySelector(".h1span").append("-"+" "+ count +" " + "Products");
-    
-    
-function displayData(giftCards) {
+    if (selected == "new") {
+      giftCards.sort(function (a, b) {
+        if (a.name > b.name) return -1;
+        if (a.name < b.name) return 1;
+        return 0;
+      });
+      console.log(giftCards);
+      displayData(giftCards);
+    }
+
+    if (selected == "htl") {
+      giftCards.sort(function (a, b) {
+        return b.price - a.price;
+      });
+      displayData(giftCards);
+    }
+    if (selected == "lth") {
+      giftCards.sort(function (a, b) {
+        return a.price - b.price;
+      });
+      displayData(giftCards);
+    }
+  }
+  var count = giftCards.length;
+  document.querySelector(".productcount").append(count);
+  document
+    .querySelector(".h1span")
+    .append("-" + " " + count + " " + "Products");
+
+  function displayData(giftCards) {
     document.querySelector("#product").innerHTML = "";
-    giftCards.map(function (elem){
-        var box = document.createElement("div");
+    giftCards.map(function (elem) {
+      var box = document.createElement("div");
 
-    var img = document.createElement("img");
-    img.setAttribute("class", "image");
-    img.src = elem.image_url;
+      var img = document.createElement("img");
+      img.setAttribute("class", "image");
+      img.src = elem.image_url;
 
-    var name = document.createElement("p");
-    name.setAttribute("id", "pname");
-    name.textContent = elem.name;
+      var name = document.createElement("p");
+      name.setAttribute("id", "pname");
+      name.textContent = elem.name;
 
-    var price = document.createElement("p");
-    price.setAttribute("id", "originalPrice");
-    price.innerText = "₹"+ elem.price;
-    
+      var price = document.createElement("p");
+      price.setAttribute("id", "originalPrice");
+      price.innerText = "₹" + elem.price;
 
-    var discount = document.createElement("p");
-    discount.setAttribute("id", "discountPrice");
-    discount.innerText ="Buy for ₹"+elem.discount;
+      var discount = document.createElement("p");
+      discount.setAttribute("id", "discountPrice");
+      discount.innerText = "Buy for ₹" + elem.discount;
 
-    var cashback = document.createElement("p");
-    cashback.setAttribute("id", "givencashback");
-    cashback.innerText =elem.cashback;
+      var cashback = document.createElement("p");
+      cashback.setAttribute("id", "givencashback");
+      cashback.innerText = elem.cashback;
 
-    box.append(img, name, price, discount,cashback);
-    box.addEventListener("click", function(){
+      box.append(img, name, price, discount, cashback);
+      box.addEventListener("click", function () {
         addToCart(elem);
-     
-    var checking= document.querySelector("#minvalue").value;
-      if(price >= checking && price <= checking){
-        return 1;
-      } 
-      displayData(giftCards);   
-    
-    // function filterByprice(){
-    //   var checking= document.querySelector("#minvalue").value;
 
-    //   if(price >= checking){
-    //     displayData(giftCards);
-    //   } 
-    // }
+        var checking = document.querySelector("#minvalue").value;
+        if (price >= checking && price <= checking) {
+          return 1;
+        }
+        displayData(giftCards);
 
-});
+        // function filterByprice(){
+        //   var checking= document.querySelector("#minvalue").value;
 
-    document.querySelector("#product").append(box);
+        //   if(price >= checking){
+        //     displayData(giftCards);
+        //   }
+        // }
+      });
 
+      document.querySelector("#product").append(box);
     });
-    
-}
-    
-function addToCart(elem) {
+  }
+
+  function addToCart(elem) {
     cartData.push(elem);
     localStorage.setItem("cart", JSON.stringify(cartData));
     window.location.href = "cart.html";
     alert("Item added to cart");
   }
-    
 </script>

@@ -225,7 +225,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK86179389D4DC7A/0.png?imwidth=282&impolicy=hq",
             name: "Big Bazaar Gift Card",
             price: 10000,
-            discount: "Buy for ₹"+8000,
+            discount: 8000,
             cashback: "with cashback",
         },
         {
@@ -233,7 +233,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK86179389D4DC7A/0.png?imwidth=282&impolicy=hq",
             name: "Big Bazaar Gift Card",
             price: 5000,
-            discount: "Buy for ₹"+3550,
+            discount: 3550,
             cashback: "with cashback",
         },
         {
@@ -241,7 +241,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK86179389D4DC7A/0.png?imwidth=282&impolicy=hq",
             name: "Big Bazaar Gift Card",
             price: 3000,
-            discount: "Buy for ₹"+1800,
+            discount: 1800,
             cashback: "with cashback",
         },
         {
@@ -249,7 +249,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK86179389D4DC7A/0.png?imwidth=282&impolicy=hq",
             name: "Big Bazaar Gift Card",
             price: 2200,
-            discount: "Buy for ₹"+1300,
+            discount: 1300,
             cashback: "with cashback",
         },
         {
@@ -257,7 +257,7 @@
             "https://assetscdn1.paytm.com/images/catalog/product/D/DE/DEAQCQWIK86179389D4DC7A/0.png?imwidth=282&impolicy=hq",
             name: "Big Bazaar Gift Card",
             price: 500,
-            discount: "Buy for ₹"+472,
+            discount: 472,
             cashback: "with cashback",
         },
        
@@ -339,7 +339,7 @@ function displayData(giftCards) {
 
     var discount = document.createElement("p");
     discount.setAttribute("id", "discountPrice");
-    discount.innerText =elem.discount;
+    discount.innerText ="Buy for ₹"+elem.discount;
 
     var cashback = document.createElement("p");
     cashback.setAttribute("id", "givencashback");

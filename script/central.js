@@ -1,4 +1,4 @@
-// var rangeslider= document.getElementById("slider");
+// var rangeslider= document.getElementById("slider")
 // var output= document.getElementById("minvalue");
 // output.innerHTML=rangeslider.value;
 
@@ -152,6 +152,7 @@ function displayData(giftCards) {
 
     var discount = document.createElement("p");
     discount.setAttribute("id", "discountPrice");
+
     discount.innerText = "Buy for ₹" + elem.discount;
 
     var cashback = document.createElement("p");
